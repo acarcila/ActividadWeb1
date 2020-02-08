@@ -1,0 +1,75 @@
+html, body
+    margin: 0
+    font-family: 'Montserrat'
+    
+section
+    padding: 1rem
+
+.o-section-personal-info
+    background-color: black
+
+    img
+        max-width: 100%
+        height: auto
+        width: 30rem
+        margin: 0 0 1rem 0
+
+    .o-h1-nombre
+        color: white
+
+    .o-h3-correo
+        color: white
+
+.o-h1-nombre
+    margin: 0
+
+.o-h3-correo
+    font-size: 1.2rem
+    font-weight: 200
+
+.o-div-proyects
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.o-div-proyect
+    overflow: hidden
+    position: relative
+    max-width: 100%
+    width: 50rem
+    background-color: grey
+    border-radius: 5px
+    padding: 1rem 1rem
+    cursor: pointer
+    margin: 1rem 0
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    transition: 0.3s
+    
+.o-div-proyect::before
+    content: ''
+    position: absolute
+    width: 0
+    height: 0
+    background-color: black
+    transform: translate(-50%, -50%)
+    border-radius: 50%
+    transition: 1s
+
+.o-div-proyect:hover
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+
+.o-div-proyect:hover:before
+    width: 300%
+    height: 300%
+
+.o-h2-name
+    margin: 0 0 1rem 0 
+    display: block 
+    position: relative
+    color: white
+
+.o-p-description
+    margin: 0 0 0 2rem
+    display: block 
+    position: relative
+    color: white
